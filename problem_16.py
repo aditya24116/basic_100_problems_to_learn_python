@@ -19,16 +19,6 @@
 # * count() method use nahi karna.
 # * Har character kitni baar aaya hai, calculate karo.
 
-'''word = input("Enter a word:")
-frequency = {}
-for i in word:
-    count = 0
-    for j in word:
-        if i==j:
-            count += 1
-    frequency[i]=count
-print(frequency)
-    '''
 word = input("Enter a word:")
 freq = {}
 for i in word:

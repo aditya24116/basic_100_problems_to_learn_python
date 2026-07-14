@@ -40,6 +40,13 @@
 # Output:
 #     Updated Successfully!
 
+def create_dictionay(number_of_products):
+    for i in range(number_of_products):
+        name = input("Enter product name:")
+        quantity = int(input("Enter product quantity:"))
+        products_details[name] = quantity
+    show_inventory(products_details)
+
 def show_inventory(products_details):
     print("\n----- Current Inventory -----")
 
@@ -70,11 +77,7 @@ def update_product(products_details):
     show_inventory(products_details)
 number_of_products = int(input("Enter number of products:"))
 products_details = {}
-for i in range(number_of_products):
-    name = input("Enter product name:")
-    quantity = int(input("Enter product quantity:"))
-    products_details[name] = quantity
-show_inventory(products_details)
+create_dictionay(number_of_products)
 while True:
     print("\n===== MENU =====")
     print("1. Add New product:")
