@@ -110,9 +110,5 @@ def create_students_dict(Number_of_students):
     show_students(students_details)
 Number_of_students = int(input("Enter number of the students:"))
 students_details = {}
-highest_marks = -1
-highest_student = ""
-lowest_marks = 101
-lowest_student = ""
 create_students_dict(Number_of_students)
 report(students_details)
